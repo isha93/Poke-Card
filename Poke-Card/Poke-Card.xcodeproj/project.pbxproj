@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		518998C62BB94ED30071FE9C /* Poke_CardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518998C52BB94ED30071FE9C /* Poke_CardApp.swift */; };
+		518998C82BB94ED30071FE9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518998C72BB94ED30071FE9C /* ContentView.swift */; };
+		518998CA2BB94ED50071FE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518998C92BB94ED50071FE9C /* Assets.xcassets */; };
+		518998CD2BB94ED50071FE9C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518998CC2BB94ED50071FE9C /* Preview Assets.xcassets */; };
+		518998D72BB94ED50071FE9C /* Poke_CardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518998D62BB94ED50071FE9C /* Poke_CardTests.swift */; };
+		518998E12BB94ED50071FE9C /* Poke_CardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518998E02BB94ED50071FE9C /* Poke_CardUITests.swift */; };
+		518998E32BB94ED50071FE9C /* Poke_CardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518998E22BB94ED50071FE9C /* Poke_CardUITestsLaunchTests.swift */; };
+		518998F62BB94F4A0071FE9C /* Networker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518998F52BB94F4A0071FE9C /* Networker.swift */; };
+		518998F82BB94FBA0071FE9C /* NetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518998F72BB94FBA0071FE9C /* NetworkFactory.swift */; };
+		518998FA2BB950840071FE9C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518998F92BB950840071FE9C /* NetworkError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		518998D32BB94ED50071FE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 518998BA2BB94ED30071FE9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 518998C12BB94ED30071FE9C;
+			remoteInfo = "Poke-Card";
+		};
+		518998DD2BB94ED50071FE9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 518998BA2BB94ED30071FE9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 518998C12BB94ED30071FE9C;
+			remoteInfo = "Poke-Card";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		518998C22BB94ED30071FE9C /* Poke-Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke-Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		518998C52BB94ED30071FE9C /* Poke_CardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poke_CardApp.swift; sourceTree = "<group>"; };
+		518998C72BB94ED30071FE9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		518998C92BB94ED50071FE9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		518998CC2BB94ED50071FE9C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		518998D22BB94ED50071FE9C /* Poke-CardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poke-CardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		518998D62BB94ED50071FE9C /* Poke_CardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poke_CardTests.swift; sourceTree = "<group>"; };
+		518998DC2BB94ED50071FE9C /* Poke-CardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Poke-CardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		518998E02BB94ED50071FE9C /* Poke_CardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poke_CardUITests.swift; sourceTree = "<group>"; };
+		518998E22BB94ED50071FE9C /* Poke_CardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poke_CardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		518998F52BB94F4A0071FE9C /* Networker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networker.swift; sourceTree = "<group>"; };
+		518998F72BB94FBA0071FE9C /* NetworkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFactory.swift; sourceTree = "<group>"; };
+		518998F92BB950840071FE9C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		518998BF2BB94ED30071FE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518998CF2BB94ED50071FE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518998D92BB94ED50071FE9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518998B92BB94ED30071FE9C = {
+			isa = PBXGroup;
+			children = (
+				518998C42BB94ED30071FE9C /* Poke-Card */,
+				518998D52BB94ED50071FE9C /* Poke-CardTests */,
+				518998DF2BB94ED50071FE9C /* Poke-CardUITests */,
+				518998C32BB94ED30071FE9C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		518998C32BB94ED30071FE9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				518998C22BB94ED30071FE9C /* Poke-Card.app */,
+				518998D22BB94ED50071FE9C /* Poke-CardTests.xctest */,
+				518998DC2BB94ED50071FE9C /* Poke-CardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		518998C42BB94ED30071FE9C /* Poke-Card */ = {
+			isa = PBXGroup;
+			children = (
+				518998F32BB94F070071FE9C /* Network */,
+				518998F22BB94F020071FE9C /* Services */,
+				518998F42BB94F2F0071FE9C /* ViewModel */,
+				518998F02BB94EF40071FE9C /* Views */,
+				518998EF2BB94EDD0071FE9C /* InitializedApp */,
+				518998C92BB94ED50071FE9C /* Assets.xcassets */,
+				518998CB2BB94ED50071FE9C /* Preview Content */,
+			);
+			path = "Poke-Card";
+			sourceTree = "<group>";
+		};
+		518998CB2BB94ED50071FE9C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				518998CC2BB94ED50071FE9C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		518998D52BB94ED50071FE9C /* Poke-CardTests */ = {
+			isa = PBXGroup;
+			children = (
+				518998D62BB94ED50071FE9C /* Poke_CardTests.swift */,
+			);
+			path = "Poke-CardTests";
+			sourceTree = "<group>";
+		};
+		518998DF2BB94ED50071FE9C /* Poke-CardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				518998E02BB94ED50071FE9C /* Poke_CardUITests.swift */,
+				518998E22BB94ED50071FE9C /* Poke_CardUITestsLaunchTests.swift */,
+			);
+			path = "Poke-CardUITests";
+			sourceTree = "<group>";
+		};
+		518998EF2BB94EDD0071FE9C /* InitializedApp */ = {
+			isa = PBXGroup;
+			children = (
+				518998C52BB94ED30071FE9C /* Poke_CardApp.swift */,
+				518998C72BB94ED30071FE9C /* ContentView.swift */,
+			);
+			path = InitializedApp;
+			sourceTree = "<group>";
+		};
+		518998F02BB94EF40071FE9C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		518998F22BB94F020071FE9C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		518998F32BB94F070071FE9C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				518998F52BB94F4A0071FE9C /* Networker.swift */,
+				518998F72BB94FBA0071FE9C /* NetworkFactory.swift */,
+				518998F92BB950840071FE9C /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		518998F42BB94F2F0071FE9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		518998C12BB94ED30071FE9C /* Poke-Card */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518998E62BB94ED50071FE9C /* Build configuration list for PBXNativeTarget "Poke-Card" */;
+			buildPhases = (
+				518998BE2BB94ED30071FE9C /* Sources */,
+				518998BF2BB94ED30071FE9C /* Frameworks */,
+				518998C02BB94ED30071FE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Poke-Card";
+			productName = "Poke-Card";
+			productReference = 518998C22BB94ED30071FE9C /* Poke-Card.app */;
+			productType = "com.apple.product-type.application";
+		};
+		518998D12BB94ED50071FE9C /* Poke-CardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518998E92BB94ED50071FE9C /* Build configuration list for PBXNativeTarget "Poke-CardTests" */;
+			buildPhases = (
+				518998CE2BB94ED50071FE9C /* Sources */,
+				518998CF2BB94ED50071FE9C /* Frameworks */,
+				518998D02BB94ED50071FE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				518998D42BB94ED50071FE9C /* PBXTargetDependency */,
+			);
+			name = "Poke-CardTests";
+			productName = "Poke-CardTests";
+			productReference = 518998D22BB94ED50071FE9C /* Poke-CardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		518998DB2BB94ED50071FE9C /* Poke-CardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 518998EC2BB94ED50071FE9C /* Build configuration list for PBXNativeTarget "Poke-CardUITests" */;
+			buildPhases = (
+				518998D82BB94ED50071FE9C /* Sources */,
+				518998D92BB94ED50071FE9C /* Frameworks */,
+				518998DA2BB94ED50071FE9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				518998DE2BB94ED50071FE9C /* PBXTargetDependency */,
+			);
+			name = "Poke-CardUITests";
+			productName = "Poke-CardUITests";
+			productReference = 518998DC2BB94ED50071FE9C /* Poke-CardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		518998BA2BB94ED30071FE9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					518998C12BB94ED30071FE9C = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					518998D12BB94ED50071FE9C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 518998C12BB94ED30071FE9C;
+					};
+					518998DB2BB94ED50071FE9C = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = 518998C12BB94ED30071FE9C;
+					};
+				};
+			};
+			buildConfigurationList = 518998BD2BB94ED30071FE9C /* Build configuration list for PBXProject "Poke-Card" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 518998B92BB94ED30071FE9C;
+			productRefGroup = 518998C32BB94ED30071FE9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				518998C12BB94ED30071FE9C /* Poke-Card */,
+				518998D12BB94ED50071FE9C /* Poke-CardTests */,
+				518998DB2BB94ED50071FE9C /* Poke-CardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		518998C02BB94ED30071FE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518998CD2BB94ED50071FE9C /* Preview Assets.xcassets in Resources */,
+				518998CA2BB94ED50071FE9C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518998D02BB94ED50071FE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518998DA2BB94ED50071FE9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		518998BE2BB94ED30071FE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518998C82BB94ED30071FE9C /* ContentView.swift in Sources */,
+				518998F82BB94FBA0071FE9C /* NetworkFactory.swift in Sources */,
+				518998C62BB94ED30071FE9C /* Poke_CardApp.swift in Sources */,
+				518998F62BB94F4A0071FE9C /* Networker.swift in Sources */,
+				518998FA2BB950840071FE9C /* NetworkError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518998CE2BB94ED50071FE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518998D72BB94ED50071FE9C /* Poke_CardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		518998D82BB94ED50071FE9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				518998E12BB94ED50071FE9C /* Poke_CardUITests.swift in Sources */,
+				518998E32BB94ED50071FE9C /* Poke_CardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		518998D42BB94ED50071FE9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 518998C12BB94ED30071FE9C /* Poke-Card */;
+			targetProxy = 518998D32BB94ED50071FE9C /* PBXContainerItemProxy */;
+		};
+		518998DE2BB94ED50071FE9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 518998C12BB94ED30071FE9C /* Poke-Card */;
+			targetProxy = 518998DD2BB94ED50071FE9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		518998E42BB94ED50071FE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		518998E52BB94ED50071FE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		518998E72BB94ED50071FE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Poke-Card/Preview Content\"";
+				DEVELOPMENT_TEAM = 2WBPPNLJ58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Poke-Card";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		518998E82BB94ED50071FE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Poke-Card/Preview Content\"";
+				DEVELOPMENT_TEAM = 2WBPPNLJ58;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Poke-Card";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		518998EA2BB94ED50071FE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WBPPNLJ58;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Poke-CardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poke-Card.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Poke-Card";
+			};
+			name = Debug;
+		};
+		518998EB2BB94ED50071FE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WBPPNLJ58;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Poke-CardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Poke-Card.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Poke-Card";
+			};
+			name = Release;
+		};
+		518998ED2BB94ED50071FE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WBPPNLJ58;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Poke-CardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Poke-Card";
+			};
+			name = Debug;
+		};
+		518998EE2BB94ED50071FE9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2WBPPNLJ58;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Poke-CardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Poke-Card";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		518998BD2BB94ED30071FE9C /* Build configuration list for PBXProject "Poke-Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518998E42BB94ED50071FE9C /* Debug */,
+				518998E52BB94ED50071FE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518998E62BB94ED50071FE9C /* Build configuration list for PBXNativeTarget "Poke-Card" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518998E72BB94ED50071FE9C /* Debug */,
+				518998E82BB94ED50071FE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518998E92BB94ED50071FE9C /* Build configuration list for PBXNativeTarget "Poke-CardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518998EA2BB94ED50071FE9C /* Debug */,
+				518998EB2BB94ED50071FE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		518998EC2BB94ED50071FE9C /* Build configuration list for PBXNativeTarget "Poke-CardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518998ED2BB94ED50071FE9C /* Debug */,
+				518998EE2BB94ED50071FE9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 518998BA2BB94ED30071FE9C /* Project object */;
+}
