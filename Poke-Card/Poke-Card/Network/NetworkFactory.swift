@@ -8,43 +8,46 @@
 import Foundation
 
 enum NetworkFactory {
-    //MARK: - AUTH
-    case doLoginEmail(email: String, password: String)
+    //MARK: - POKEMON
+    case getPokemon(name: String)
+    
+    case getAbility(name: String)
+    
 }
 
 extension NetworkFactory {
-    
     // MARK: URL PATH API
     var path: String {
         switch self {
-        case .doLoginEmail:
-            return "/login"
+        case .getPokemon(let name):
+            return "pokemon/\(name)"
+        case .getAbility(let name):
+            return "ability/\(name)"
         }
     }
     
     // MARK: URL QUERY PARAMS / URL PARAMS
     var queryItems: [URLQueryItem] {
         switch self {
-        case .doLoginEmail:
+        case .getPokemon, .getAbility:
             return []
         }
     }
     
     var bodyParam: [String: Any]? {
         switch self {
-        case .doLoginEmail(let email, let password):
-            return [
-                "email": email,
-                "password": password
-            ]
+        case .getPokemon, .getAbility:
+            return [:]
         }
     }
     
     // MARK: BASE URL API
     var baseApi: String? {
         switch self {
-        case .doLoginEmail(email: let email, password: let password):
-            return "https://pokeapi.co/api/v2/pokemon/\(email)"
+        case .getPokemon:
+            return "https://pokeapi.co/api/v2/"
+        case .getAbility:
+            return "https://pokeapi.co/api/v3/"
         }
     }
     
@@ -65,8 +68,8 @@ extension NetworkFactory {
     // MARK: HTTP METHOD
     var method: RequestMethod {
         switch self {
-        case .doLoginEmail:
-            return .post
+        case .getPokemon, .getAbility:
+            return .get
         }
     }
     
@@ -94,7 +97,7 @@ extension NetworkFactory {
     // MARK: HEADER API
     var headers: [String: String]? {
         switch self {
-        case .doLoginEmail:
+        case .getPokemon, .getAbility:
             return getHeaders(type: .authorized)
         }
     }
