@@ -20,9 +20,9 @@ extension NetworkFactory {
     var path: String {
         switch self {
         case .getPokemon(let name):
-            return "pokemon/\(name)"
+            return "/api/v2/pokemon/\(name)"
         case .getAbility(let name):
-            return "ability/\(name)"
+            return "/api/v2/ability/\(name)"
         }
     }
     
@@ -44,10 +44,8 @@ extension NetworkFactory {
     // MARK: BASE URL API
     var baseApi: String? {
         switch self {
-        case .getPokemon:
-            return "https://pokeapi.co/api/v2/"
-        case .getAbility:
-            return "https://pokeapi.co/api/v3/"
+        case .getPokemon, .getAbility:
+            return "pokeapi.co"
         }
     }
     
