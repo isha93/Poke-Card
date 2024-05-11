@@ -9,6 +9,7 @@ import Foundation
 
 @MainActor
 class PokemonViewModel: ObservableObject {
+    // MARK: data model of pokemon it will emit to view
     @Published var pokemon: PokemonModelData?
     
     private let pokemonServices: PokemonServicesProtocol

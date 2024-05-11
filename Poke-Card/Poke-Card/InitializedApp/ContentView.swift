@@ -26,7 +26,7 @@ struct ContentView: View {
             
             Button(role: .destructive) {
                 Task {
-                    try await pokemonViewModel.getPokemon(name:namePokemon)
+                    await pokemonViewModel.getPokemon(name:namePokemon)
                 }
             } label: {
                 Text("Search")

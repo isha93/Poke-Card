@@ -20,6 +20,8 @@
 		518999012BC283050071FE9C /* PokemonServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518999002BC283050071FE9C /* PokemonServices.swift */; };
 		518999042BC285160071FE9C /* PokemonModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518999032BC285160071FE9C /* PokemonModelData.swift */; };
 		518999062BC286A10071FE9C /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518999052BC286A10071FE9C /* PokemonViewModel.swift */; };
+		518999092BC2D2FC0071FE9C /* AbilitesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518999082BC2D2FC0071FE9C /* AbilitesViewModel.swift */; };
+		51E719832BEFAFCB00E3E672 /* DotaHeroesModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E719822BEFAFCB00E3E672 /* DotaHeroesModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		518999002BC283050071FE9C /* PokemonServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonServices.swift; sourceTree = "<group>"; };
 		518999032BC285160071FE9C /* PokemonModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModelData.swift; sourceTree = "<group>"; };
 		518999052BC286A10071FE9C /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
+		518999082BC2D2FC0071FE9C /* AbilitesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitesViewModel.swift; sourceTree = "<group>"; };
+		51E719822BEFAFCB00E3E672 /* DotaHeroesModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroesModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 		518998F22BB94F020071FE9C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				518999072BC2D2DB0071FE9C /* AbilitiesServices */,
 				518998FF2BC282D60071FE9C /* PokemonServices */,
 			);
 			path = Services;
@@ -181,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				518999052BC286A10071FE9C /* PokemonViewModel.swift */,
+				518999082BC2D2FC0071FE9C /* AbilitesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -197,8 +203,16 @@
 			isa = PBXGroup;
 			children = (
 				518999032BC285160071FE9C /* PokemonModelData.swift */,
+				51E719822BEFAFCB00E3E672 /* DotaHeroesModelData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		518999072BC2D2DB0071FE9C /* AbilitiesServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AbilitiesServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,7 +352,9 @@
 				518998F62BB94F4A0071FE9C /* Networker.swift in Sources */,
 				518998FA2BB950840071FE9C /* NetworkError.swift in Sources */,
 				518999062BC286A10071FE9C /* PokemonViewModel.swift in Sources */,
+				518999092BC2D2FC0071FE9C /* AbilitesViewModel.swift in Sources */,
 				518999042BC285160071FE9C /* PokemonModelData.swift in Sources */,
+				51E719832BEFAFCB00E3E672 /* DotaHeroesModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,7 +12,6 @@ protocol PokemonServicesProtocol: AnyObject {
     func getPokemon(endPoint: NetworkFactory) async throws -> PokemonModelData
 }
 
-
 class PokemonServices: PokemonServicesProtocol {
     var networker: NetworkerProtocol
     

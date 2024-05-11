@@ -20,7 +20,7 @@ extension NetworkFactory {
     var path: String {
         switch self {
         case .getPokemon(let name):
-            return "/api/v2/pokemon/\(name)"
+            return "/api/heroes/"
         case .getAbility(let name):
             return "/api/v2/ability/\(name)"
         }
@@ -45,7 +45,7 @@ extension NetworkFactory {
     var baseApi: String? {
         switch self {
         case .getPokemon, .getAbility:
-            return "pokeapi.co"
+            return "api.opendota.com"
         }
     }
     
@@ -80,7 +80,6 @@ extension NetworkFactory {
     }
     
     var boundary: String {
-//        let boundary: String = "Boundary-\(UserDefaults.deviceFCMToken)"
         return "boundary"
     }
     
@@ -151,7 +150,6 @@ extension NetworkFactory {
             for datum in imageData {
                 if datum.fileData != Data() {
                     body.append("Content-Disposition: form-data; name=\"\(datum.paramName)\"; filename=\"\(datum.fileName)\"\r\n".data(using: .utf8)!)
-//                    body.append("Content-Type: \(datum.fileData.mimeType)\r\n\r\n".data(using: .utf8)!)
                     body.append(datum.fileData)
                     body.append("\r\n--\(boundary)--\r\n".data(using: .utf8)!)
                 }
@@ -162,9 +160,6 @@ extension NetworkFactory {
     }
     
     private func setupBasicAuth() -> String {
-//        let username = ConfigManager.shared.getValue(forKey: .userToken)
-//        let password = ConfigManager.shared.getValue(forKey: .passToken)
-//        let loginString = "\(username):\(password)"
         let loginString = ""
         
         guard let loginData = loginString.data(using: String.Encoding.utf8) else {
@@ -172,7 +167,6 @@ extension NetworkFactory {
         }
         let _ = loginData.base64EncodedString()
         
-        //        return base64LoginString
         return "bmFuYS5udXJ3YW5kYUBnbWFpbC5jb206a2VyamErc2pzKzIwMjE="
     }
     
