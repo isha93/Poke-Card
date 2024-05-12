@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14738FF12BEFBADB00BD2CDA /* DotaServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14738FF02BEFBADB00BD2CDA /* DotaServices.swift */; };
+		14738FF32BEFBFAE00BD2CDA /* DotaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14738FF22BEFBFAE00BD2CDA /* DotaViewModel.swift */; };
 		518998C62BB94ED30071FE9C /* Poke_CardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518998C52BB94ED30071FE9C /* Poke_CardApp.swift */; };
 		518998C82BB94ED30071FE9C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518998C72BB94ED30071FE9C /* ContentView.swift */; };
 		518998CA2BB94ED50071FE9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518998C92BB94ED50071FE9C /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14738FF02BEFBADB00BD2CDA /* DotaServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaServices.swift; sourceTree = "<group>"; };
+		14738FF22BEFBFAE00BD2CDA /* DotaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaViewModel.swift; sourceTree = "<group>"; };
 		518998C22BB94ED30071FE9C /* Poke-Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke-Card.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		518998C52BB94ED30071FE9C /* Poke_CardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poke_CardApp.swift; sourceTree = "<group>"; };
 		518998C72BB94ED30071FE9C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14738FEF2BEFBA9A00BD2CDA /* DotaServices */ = {
+			isa = PBXGroup;
+			children = (
+				14738FF02BEFBADB00BD2CDA /* DotaServices.swift */,
+			);
+			path = DotaServices;
+			sourceTree = "<group>";
+		};
 		518998B92BB94ED30071FE9C = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +180,7 @@
 			children = (
 				518999072BC2D2DB0071FE9C /* AbilitiesServices */,
 				518998FF2BC282D60071FE9C /* PokemonServices */,
+				14738FEF2BEFBA9A00BD2CDA /* DotaServices */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -187,6 +200,7 @@
 			children = (
 				518999052BC286A10071FE9C /* PokemonViewModel.swift */,
 				518999082BC2D2FC0071FE9C /* AbilitesViewModel.swift */,
+				14738FF22BEFBFAE00BD2CDA /* DotaViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -347,12 +361,14 @@
 			files = (
 				518998C82BB94ED30071FE9C /* ContentView.swift in Sources */,
 				518998F82BB94FBA0071FE9C /* NetworkFactory.swift in Sources */,
+				14738FF32BEFBFAE00BD2CDA /* DotaViewModel.swift in Sources */,
 				518998C62BB94ED30071FE9C /* Poke_CardApp.swift in Sources */,
 				518999012BC283050071FE9C /* PokemonServices.swift in Sources */,
 				518998F62BB94F4A0071FE9C /* Networker.swift in Sources */,
 				518998FA2BB950840071FE9C /* NetworkError.swift in Sources */,
 				518999062BC286A10071FE9C /* PokemonViewModel.swift in Sources */,
 				518999092BC2D2FC0071FE9C /* AbilitesViewModel.swift in Sources */,
+				14738FF12BEFBADB00BD2CDA /* DotaServices.swift in Sources */,
 				518999042BC285160071FE9C /* PokemonModelData.swift in Sources */,
 				51E719832BEFAFCB00E3E672 /* DotaHeroesModelData.swift in Sources */,
 			);

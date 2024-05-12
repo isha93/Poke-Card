@@ -13,7 +13,7 @@ struct DotaHeroesModelData: Codable {
     let name, localizedName: String?
     let primaryAttr: PrimaryAttr?
     let attackType: AttackType?
-    let roles: [Role]?
+    let roles: [String]?
     let legs: Int?
 
     enum CodingKeys: String, CodingKey {

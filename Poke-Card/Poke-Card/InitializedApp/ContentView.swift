@@ -8,33 +8,40 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var pokemonViewModel = PokemonViewModel()
-    @State var namePokemon: String = ""
+    @StateObject var heroesViewModel = DotaViewModel()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text(pokemonViewModel.pokemon?.name ?? "")
-            TextField("", text: $namePokemon)
-                .textFieldStyle(.roundedBorder)
-            if let pokemonAbilities = pokemonViewModel.pokemon?.abilities {
-                ForEach(pokemonAbilities, id: \.slot) { ability in
-                    Text(ability.ability?.name?.lowercased() ?? "")
+        ScrollView{
+            VStack{
+                ForEach(heroesViewModel.dotas, id: \.id){ dota in
+                    HStack{
+                        VStack{
+                            Text(dota.localizedName ?? "").font(.headline).foregroundStyle(.red)
+                            
+                            ForEach(dota.roles ?? [], id:\.self) { role in
+                                Text(role)
+                                    .font(.caption)
+                                    .foregroundStyle(.gray)
+                            }
+                            Text(dota.attackType?.rawValue ?? "").font(.title3).foregroundStyle(.brown)
+                        }
+                        Spacer()
+                        VStack{
+                            Text(dota.primaryAttr?.rawValue ?? "").font(.headline).foregroundStyle(.orange)
+                            Text("\(dota.legs ?? 0) \(dota.legs ?? 0 > 1 ? "legs" : "leg")")
+                        }
+                    }
+                    .padding()
+                    .overlay {
+                        Rectangle().stroke(lineWidth: 2)
+                    }
                 }
-            }
-            
-            Button(role: .destructive) {
-                Task {
-                    await pokemonViewModel.getPokemon(name:namePokemon)
-                }
-            } label: {
-                Text("Search")
             }
         }
-        .padding()
-        .onAppear {
-            
+        .onAppear(){
+            Task {
+                await heroesViewModel.getDota(name:"")
+            }
         }
     }
 }

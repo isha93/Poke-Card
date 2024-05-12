@@ -11,6 +11,7 @@ import Foundation
 class PokemonViewModel: ObservableObject {
     // MARK: data model of pokemon it will emit to view
     @Published var pokemon: PokemonModelData?
+    @Published var dota: [DotaHeroesModelData] = []
     
     private let pokemonServices: PokemonServicesProtocol
     
@@ -18,9 +19,18 @@ class PokemonViewModel: ObservableObject {
         self.pokemonServices = pokemonServices
     }
 
-    func getPokemon(name: String) async {
+//    func getPokemon(name: String) async {
+//        do {
+//            let pokemon = try await pokemonServices.getPokemon(endPoint: .getPokemon(name: name))
+//            self.pokemon = pokemon
+//        } catch {
+//            print(error.localizedDescription)
+//        }
+//    }
+    
+    func getDota(name: String) async {
         do {
-            let pokemon = try await pokemonServices.getPokemon(endPoint: .getPokemon(name: name))
+            let dota = try await pokemonServices.getPokemon(endPoint: .getPokemon(name: name))
             self.pokemon = pokemon
         } catch {
             print(error.localizedDescription)
