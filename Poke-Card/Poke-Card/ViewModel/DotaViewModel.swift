@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+
 @MainActor
 class DotaViewModel: ObservableObject {
     @Published var dotas: [DotaHeroesModelData] = []

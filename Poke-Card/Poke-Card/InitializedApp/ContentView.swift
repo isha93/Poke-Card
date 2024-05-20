@@ -30,27 +30,12 @@ struct ContentView: View {
     
     var body: some View {
         ScrollView{
-            HStack{
-                Spacer()
-                Menu {                ForEach(Array(heroesViewModel.primaries) ,id:\.self) { data in
-                    Button(action: {
-                        primarySelect = data
-                    }
-                    ) {
-                        
-                        Text(data)
-                        HStack{
-                            if data == primarySelect{
-                                Image(systemName: "checkmark.circle.fill")
-                            }
-                        }
-                        
-                    }
+            Picker("Select", selection: $primarySelect) {
+                ForEach(Array(heroesViewModel.primaries), id:\.self) {
+                    hero in
+                    Text(hero)
                 }
-                } label: {
-                    Image(systemName: "line.3.horizontal.decrease.circle").font(.system(size: 30))
-                }
-            }
+            }.pickerStyle(.segmented).padding(.bottom)
             
             
             NavigationLink(destination: destinationView, isActive: $navigateTo , label: { EmptyView() })
