@@ -13,7 +13,7 @@ struct Poke_CardApp: App {
         WindowGroup {
 //            WindowGroup is app for multiple window like 
             NavigationView {
-                ContentView()
+                MainApp()
             }
         }
     }

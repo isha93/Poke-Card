@@ -13,6 +13,7 @@ import Foundation
 class DotaViewModel: ObservableObject {
     @Published var dotas: [DotaHeroesModelData] = []
     @Published var primaries: Set<String> = []
+    @Published var isLoading: Bool = false
     
     private let dotaServices: DotaServicesProtocol
     
@@ -26,15 +27,16 @@ class DotaViewModel: ObservableObject {
                 primaries.insert(primaryAttr)
             }
         }
-        primaries.insert("reset")
     }
     
     func getDota(name: String) async {
         do {
+            isLoading = true
             let dota = try await dotaServices.getDotas(endPoint: .getPokemon(name: name))
             self.dotas = dota
             
             getAllPrimary()
+            isLoading = false
         } catch {
             print(error.localizedDescription)
         }
