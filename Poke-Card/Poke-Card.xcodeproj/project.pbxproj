@@ -30,6 +30,7 @@
 		518999062BC286A10071FE9C /* PokemonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518999052BC286A10071FE9C /* PokemonViewModel.swift */; };
 		518999092BC2D2FC0071FE9C /* AbilitesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518999082BC2D2FC0071FE9C /* AbilitesViewModel.swift */; };
 		51E719832BEFAFCB00E3E672 /* DotaHeroesModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E719822BEFAFCB00E3E672 /* DotaHeroesModelData.swift */; };
+		9A4181342C0B505100D7224C /* DotaviewmodelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4181332C0B505100D7224C /* DotaviewmodelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		518999052BC286A10071FE9C /* PokemonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewModel.swift; sourceTree = "<group>"; };
 		518999082BC2D2FC0071FE9C /* AbilitesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbilitesViewModel.swift; sourceTree = "<group>"; };
 		51E719822BEFAFCB00E3E672 /* DotaHeroesModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaHeroesModelData.swift; sourceTree = "<group>"; };
+		9A4181332C0B505100D7224C /* DotaviewmodelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaviewmodelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				518998D62BB94ED50071FE9C /* Poke_CardTests.swift */,
+				9A4181332C0B505100D7224C /* DotaviewmodelTest.swift */,
 			);
 			path = "Poke-CardTests";
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4181342C0B505100D7224C /* DotaviewmodelTest.swift in Sources */,
 				518998D72BB94ED50071FE9C /* Poke_CardTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

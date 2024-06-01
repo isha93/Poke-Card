@@ -16,8 +16,8 @@ enum NetworkError: Error, LocalizedError {
         switch self {
         case .middlewareError(_, let message):
             return message
-        case .internetError:
-            return ""
+        case .internetError(let message):
+            return message
         case .decodingError(let message):
             return message
         case .unAuthorized:
