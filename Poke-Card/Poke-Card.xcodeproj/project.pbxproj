@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14687F0A2C0611A800D14E25 /* TeamsServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14687F092C0611A800D14E25 /* TeamsServices.swift */; };
+		14687F0C2C0614C800D14E25 /* TeamsModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14687F0B2C0614C800D14E25 /* TeamsModelData.swift */; };
+		14687F0E2C06165500D14E25 /* TeamsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14687F0D2C06165500D14E25 /* TeamsViewModel.swift */; };
+		14687F102C061CD000D14E25 /* TeamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14687F0F2C061CD000D14E25 /* TeamsView.swift */; };
 		14738FF12BEFBADB00BD2CDA /* DotaServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14738FF02BEFBADB00BD2CDA /* DotaServices.swift */; };
 		14738FF32BEFBFAE00BD2CDA /* DotaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14738FF22BEFBFAE00BD2CDA /* DotaViewModel.swift */; };
 		14738FF52BF0A5B200BD2CDA /* DetailHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14738FF42BF0A5B200BD2CDA /* DetailHeroView.swift */; };
@@ -46,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14687F092C0611A800D14E25 /* TeamsServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsServices.swift; sourceTree = "<group>"; };
+		14687F0B2C0614C800D14E25 /* TeamsModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsModelData.swift; sourceTree = "<group>"; };
+		14687F0D2C06165500D14E25 /* TeamsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsViewModel.swift; sourceTree = "<group>"; };
+		14687F0F2C061CD000D14E25 /* TeamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TeamsView.swift; path = "Poke-Card/ViewModel/TeamsView.swift"; sourceTree = SOURCE_ROOT; };
 		14738FF02BEFBADB00BD2CDA /* DotaServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaServices.swift; sourceTree = "<group>"; };
 		14738FF22BEFBFAE00BD2CDA /* DotaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotaViewModel.swift; sourceTree = "<group>"; };
 		14738FF42BF0A5B200BD2CDA /* DetailHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailHeroView.swift; path = "Poke-Card/ViewModel/DetailHeroView.swift"; sourceTree = SOURCE_ROOT; };
@@ -95,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14687F082C06118E00D14E25 /* TeamsServices */ = {
+			isa = PBXGroup;
+			children = (
+				14687F092C0611A800D14E25 /* TeamsServices.swift */,
+			);
+			path = TeamsServices;
+			sourceTree = "<group>";
+		};
 		14738FEF2BEFBA9A00BD2CDA /* DotaServices */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				14738FF42BF0A5B200BD2CDA /* DetailHeroView.swift */,
+				14687F0F2C061CD000D14E25 /* TeamsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -184,6 +201,7 @@
 		518998F22BB94F020071FE9C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				14687F082C06118E00D14E25 /* TeamsServices */,
 				518999072BC2D2DB0071FE9C /* AbilitiesServices */,
 				518998FF2BC282D60071FE9C /* PokemonServices */,
 				14738FEF2BEFBA9A00BD2CDA /* DotaServices */,
@@ -207,6 +225,7 @@
 				518999052BC286A10071FE9C /* PokemonViewModel.swift */,
 				518999082BC2D2FC0071FE9C /* AbilitesViewModel.swift */,
 				14738FF22BEFBFAE00BD2CDA /* DotaViewModel.swift */,
+				14687F0D2C06165500D14E25 /* TeamsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -224,6 +243,7 @@
 			children = (
 				518999032BC285160071FE9C /* PokemonModelData.swift */,
 				51E719822BEFAFCB00E3E672 /* DotaHeroesModelData.swift */,
+				14687F0B2C0614C800D14E25 /* TeamsModelData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,11 +389,15 @@
 				518998C82BB94ED30071FE9C /* ContentView.swift in Sources */,
 				147B712C2BFEE8E700310E4B /* MainApp.swift in Sources */,
 				518998F82BB94FBA0071FE9C /* NetworkFactory.swift in Sources */,
+				14687F0C2C0614C800D14E25 /* TeamsModelData.swift in Sources */,
 				14738FF32BEFBFAE00BD2CDA /* DotaViewModel.swift in Sources */,
 				518998C62BB94ED30071FE9C /* Poke_CardApp.swift in Sources */,
 				518999012BC283050071FE9C /* PokemonServices.swift in Sources */,
+				14687F0E2C06165500D14E25 /* TeamsViewModel.swift in Sources */,
+				14687F102C061CD000D14E25 /* TeamsView.swift in Sources */,
 				518998F62BB94F4A0071FE9C /* Networker.swift in Sources */,
 				518998FA2BB950840071FE9C /* NetworkError.swift in Sources */,
+				14687F0A2C0611A800D14E25 /* TeamsServices.swift in Sources */,
 				518999062BC286A10071FE9C /* PokemonViewModel.swift in Sources */,
 				518999092BC2D2FC0071FE9C /* AbilitesViewModel.swift in Sources */,
 				14738FF12BEFBADB00BD2CDA /* DotaServices.swift in Sources */,

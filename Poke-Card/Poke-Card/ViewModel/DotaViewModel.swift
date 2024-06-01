@@ -19,8 +19,11 @@ class DotaViewModel: ObservableObject {
     
     init(dotaServices: DotaServicesProtocol = DotaServices(networker: Networker())) {
         self.dotaServices = dotaServices
-    }
-    
+    }    
+}
+
+// MARK: fetchAll Primary
+extension DotaViewModel {
     func getAllPrimary() {
         for dota in dotas {
             if let primaryAttr = dota.primaryAttr?.rawValue {
@@ -28,7 +31,10 @@ class DotaViewModel: ObservableObject {
             }
         }
     }
-    
+}
+
+// MARK: fetchDota
+extension DotaViewModel {
     func getDota(name: String) async {
         do {
             isLoading = true
@@ -41,6 +47,4 @@ class DotaViewModel: ObservableObject {
             print(error.localizedDescription)
         }
     }
-    
-    
 }

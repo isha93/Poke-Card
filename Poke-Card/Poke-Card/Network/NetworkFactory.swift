@@ -13,30 +13,35 @@ enum NetworkFactory {
     
     case getAbility(name: String)
     
+    case getTeams
+    
 }
 
+// extension adalah perpanjangan dari sebuah object. dalam hal ini perpanjangan dari enum NetworkFactory
 extension NetworkFactory {
     // MARK: URL PATH API
     var path: String {
         switch self {
-        case .getPokemon(let name):
+        case .getPokemon:
             return "/api/heroes/"
         case .getAbility(let name):
             return "/api/v2/ability/\(name)"
+        case .getTeams:
+            return "/api/teams/"
         }
     }
     
     // MARK: URL QUERY PARAMS / URL PARAMS
     var queryItems: [URLQueryItem] {
         switch self {
-        case .getPokemon, .getAbility:
+        case .getPokemon, .getAbility, .getTeams:
             return []
         }
     }
     
     var bodyParam: [String: Any]? {
         switch self {
-        case .getPokemon, .getAbility:
+        case .getPokemon, .getAbility, .getTeams:
             return [:]
         }
     }
@@ -44,7 +49,7 @@ extension NetworkFactory {
     // MARK: BASE URL API
     var baseApi: String? {
         switch self {
-        case .getPokemon, .getAbility:
+        case .getPokemon, .getAbility, .getTeams:
             return "api.opendota.com"
         }
     }
@@ -66,7 +71,7 @@ extension NetworkFactory {
     // MARK: HTTP METHOD
     var method: RequestMethod {
         switch self {
-        case .getPokemon, .getAbility:
+        case .getPokemon, .getAbility, .getTeams:
             return .get
         }
     }
@@ -94,7 +99,7 @@ extension NetworkFactory {
     // MARK: HEADER API
     var headers: [String: String]? {
         switch self {
-        case .getPokemon, .getAbility:
+        case .getPokemon, .getAbility, .getTeams:
             return getHeaders(type: .authorized)
         }
     }

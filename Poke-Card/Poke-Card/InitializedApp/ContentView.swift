@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    var isAllData: Bool? = false
+    var isAllData: Bool = false
     
     @StateObject var heroesViewModel = DotaViewModel()
     @State var navigateTo: Bool = false
@@ -38,7 +38,8 @@ struct ContentView: View {
                 Spacer()
             }else{
                 ScrollView{
-                    if !(isAllData ?? false) {
+                    // isAllData = true
+                    if !(isAllData) {
                         Picker("Select", selection: $primarySelect) {
                             ForEach(Array(heroesViewModel.primaries), id:\.self) {
                                 hero in

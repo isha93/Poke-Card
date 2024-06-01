@@ -7,12 +7,16 @@
 
 import Foundation
 
+// protocol is blueprient of function/variable, jadi kelas yang menjalankan harus mengisi kontrak yang ada di dalam protocol
+// goals of using protocol for mock testing
+
 protocol PokemonServicesProtocol: AnyObject {
     var networker: NetworkerProtocol { get }
     func getPokemon(endPoint: NetworkFactory) async throws -> PokemonModelData
 }
 
 class PokemonServices: PokemonServicesProtocol {
+    
     var networker: NetworkerProtocol
     
     init(networker: NetworkerProtocol) {
